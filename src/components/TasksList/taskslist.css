@@ -1,0 +1,74 @@
+.tasksList{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 420px;
+}
+.tasksList h2 {
+    text-align: end;
+}
+
+.tasksList ul {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y:auto;
+    width: 100%;
+    align-self: end;
+}
+.tasksList li {
+    list-style: none;
+}
+
+.tasksList p.tasksList-title{
+    text-align: center;
+    color: #040a0f;
+    font-weight: bold;
+}
+
+.tasksList p {
+    min-width: 175px;
+    color: var(--form-text);
+    background-color: var(--background);
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    display: block;
+}
+
+.tasksList-button-show {
+    width: 100%;
+}
+.tasksList div{
+    display: flex;
+    justify-content: space-evenly;
+}
+button.tasksList-button-svg-edit, .tasksList-button-svg-delete{
+    height: auto;
+    width: 12%;
+    padding: 2px 5px;
+    align-self: end;
+    min-width: 44px;
+}
+.tasksList-button-svg-delete{
+    background-color: rgb(184, 89, 73);
+}
+
+.modal{
+    flex-direction: column;
+    background-color: #2a2d31;
+    z-index: 5;
+    width: 33%;
+    position: fixed;
+    left: 14%;
+    bottom: 5%;
+    height: 315px;
+    border-radius: 6px;
+    padding: 0.5% 2%;
+}
+
+.modal h3{
+    text-align: center;
+}

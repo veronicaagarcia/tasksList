@@ -1,0 +1,17 @@
+.formTasks{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 40%;
+}
+
+.formTasks label{
+    color: #040a0f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formTasks button {
+    width: 100%;
+    margin-top: 16px;
+}
