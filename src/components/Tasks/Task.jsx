@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './taskslist.css'
 
-export function TotalTasks ({deleteTask, tasks, getTaskToEdit}) {
+export function Task ({deleteTask, tasks, getTaskToEdit}) {
 
     function handlerEdit (id) {
         getTaskToEdit(id)
@@ -16,10 +16,12 @@ export function TotalTasks ({deleteTask, tasks, getTaskToEdit}) {
                 <li key={item.id}>
                     <div>
                         <h3 className='tasksList-title'>{item.inputTitle}</h3>
-                            <button 
-                                onClick={()=> handlerEdit(item.id)}
-                                className='tasksList-button-svg-edit'
-                            ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg></button>
+                        <button 
+                            onClick={()=> handlerEdit(item.id)}
+                            className='tasksList-button-svg-edit'
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                        </button>
                         <button 
                             onClick={()=> handlerDelete(item.id)}
                             className='tasksList-button-svg-delete'
